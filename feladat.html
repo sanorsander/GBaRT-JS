@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet/less" href="feladat.less" />
+		<script type="text/javascript" src="less.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<table>
+				<tbody id="peoples">
+					<tr id="peoplesHeader">
+						<th>Picture</th>
+						<th>Gender</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Location</th>
+					</tr>
+					<tr id="peoplesSearch">
+						<th></th>
+						<th>
+							<select id="gender">
+								<option value="">all</option>
+								<option value="male">male</option>
+								<option value="female">female</option>
+							</select>
+						</th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr id="peoplesDatas">
+					<td>[[people.picture.thumbnail]]</td>
+					<td>[[people.gender]]</td>
+					<td>[[people.name.title]] [[people.name.first]] [[people.name.last]]</td>
+					<td>[[people.email]]</td>
+					<td>[[people.location.postcode]] [[people.location.state]] - [[people.location.city]], [[people.location.street]]</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="peoplesPaging"></div>
+			<input type="text" id="peoplesLength" value="10">
+			<div id="peoplesShow"></div>
+		</div>
+		<script type="text/javascript" src="feladat.js"></script>
+	</body>
+</html>

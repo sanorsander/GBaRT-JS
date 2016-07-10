@@ -1,0 +1,49 @@
+@white: #ffffff;
+@light-grey: #f2f2f2;
+@current-grey: #cccccc;
+@hover-grey: #c2c2c2;
+@black: #000000;
+
+table, th , td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 5px;
+}
+table #peoples tr:nth-child(odd) {
+	background-color: @light-grey;
+}
+table #peoples tr:nth-child(even) {
+	background-color: @white;
+}
+table #peoples td img {
+	width: 48px;
+	height: 48px;
+}
+input#peoplesLength {
+	width: 30px;
+	text-align: center;
+}
+#peoplesShow {
+	display: inline-block;
+	margin: 3px;
+}
+#peoplesPaging {
+	margin: 10px 0px;
+}
+#peoplesPaging a {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid @black;
+	background-color: @light-grey;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#peoplesPaging a:first-child {
+	margin-left: 0px;
+}
+#peoplesPaging a.current {
+	background-color: @current-grey;
+}
+#peoplesPaging a:hover {
+	background-color: @hover-grey;
+}
